@@ -34676,12 +34676,12 @@
     "73799": {
       "events": {},
       "links": {},
-      "address": "0x7dbd4cfEe52395E8066Af1F714A53596A6e6Ca61",
-      "transactionHash": "0xa21c9ab4a6aea43bff46038ded64e66f6aa8cb6d45d0aba093380c8b33903592"
+      "address": "0x775BB40C04A3F84f9d6FBfA42d1966595AdF5c48",
+      "transactionHash": "0x9a0c6437493df11eb3af76e2734c7d67462bf2824f66875b8f983e0f719b0e37"
     }
   },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-09-18T15:00:46.722Z",
+  "updatedAt": "2021-10-13T02:36:52.166Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "Private certificate issuance differ from the public ones in a way that the fungible volumes that are being transferred/claimed are stored off-chain.",

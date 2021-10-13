@@ -46733,12 +46733,12 @@
     "73799": {
       "events": {},
       "links": {},
-      "address": "0x80Eb561D1bfC612FD70B355CB306cCf2cc037EF2",
-      "transactionHash": "0xad0876140281b72939832874c4f01e82fb3f975e16b226a13f3ca0baa898c5bf"
+      "address": "0xF9de70eAe5A1081671a7B814f0C6b35361B6a4C0",
+      "transactionHash": "0x3358c487c0398341992b3909ea2f011d37d90c5a138e189fc776b655a68bd0ad"
     }
   },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-09-18T15:00:46.678Z",
+  "updatedAt": "2021-10-13T02:36:52.123Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "Also complies to ERC-1155: https://eips.ethereum.org/EIPS/eip-1155.** Data set to 0 because there is no meaningful check yet to be done on the data",

@@ -38,7 +38,7 @@ module.exports = {
     volta: {
       networkCheckTimeout: 10000,
       provider: function() {
-        return new HDWalletProvider("0x4145997b0b7cc89e3104ecb7bd5d4f68bcf38f5e1acf46d2c4eac7f13dbe4aa0", "https://volta-rpc.energyweb.org");
+        return new HDWalletProvider("0xd71a55dd4b5696564acb5e549304aa971d9f5e2099ca90d2a736242062e68880", "https://volta-rpc.energyweb.org");
       },
       network_id: 73799,
       // gas: 5000000,           // Gas sent with each transaction (default: ~6700000)

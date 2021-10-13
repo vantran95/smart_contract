@@ -209,7 +209,7 @@ func TestGetCertificationRequestedLog(t *testing.T) {
 		//fmt.Println(vLog.BlockHash.Hex()) // 0x3404b8c050aa0aacd0223e91b5c32fee6400f357764771d0684fa7b3f448f1a8
 		fmt.Println("Block num: ", vLog.BlockNumber) // 2394201
 		fmt.Println("tnx hash: ", vLog.TxHash.Hex()) // 0x280201eda63c9ff6f305fcee51d5eb86167fab40ca3108ec784e8652a0e2b1a6
-		//fmt.Println("data: ",vLog.Data)
+		fmt.Println("data: ",vLog.)
 
 		var topics [4]string
 		for i := range vLog.Topics {
@@ -479,4 +479,25 @@ func RetrievePrivateKey(iamId string) (*ecdsa.PrivateKey, error) {
 	}
 
 	return crypto.ToECDSA(b)
+}
+
+func TestCreateBlockchainAddress(t *testing.T) {
+	privateKey, err := crypto.GenerateKey()
+	assert.NoError(t, err)
+
+	privateKeyBytes := crypto.FromECDSA(privateKey)
+
+	fmt.Println("SAVE BUT DO NOT SHARE THIS (Private Key):", hexutil.Encode(privateKeyBytes))
+
+	publicKey := privateKey.Public()
+	publicKeyECDSA, ok := publicKey.(*ecdsa.PublicKey)
+	if !ok {
+		t.Errorf("error casting public key to ECDSA")
+	}
+
+	publicKeyBytes := crypto.FromECDSAPub(publicKeyECDSA)
+	fmt.Println("Public key: ", hexutil.Encode(publicKeyBytes))
+
+	address := crypto.PubkeyToAddress(*publicKeyECDSA).Hex()
+	fmt.Println("Address: ", address)
 }
